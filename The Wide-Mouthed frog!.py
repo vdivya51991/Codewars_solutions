@@ -6,9 +6,14 @@ When he meets the alligator, it then makes a tiny mouth.
 
 Your goal in this kata is to create complete the mouth_size method this method take one argument animal which corresponds to the animal encountered by frog. If this one is an alligator (case insensitive) return small otherwise return wide.
 
+# Long solution
 def mouth_size(animal): 
   # code here
   if animal.lower() == 'alligator':
       return "small"
   else:
       return "wide"
+
+ # One line solution
+def mouth_size(animal): 
+    return 'small' if animal.lower() == 'alligator' else 'wide'
